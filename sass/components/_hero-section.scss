@@ -1,0 +1,33 @@
+.hero {
+    margin: 0 auto;
+    min-height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../img/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-color: $primary-background;
+    padding-top: 200px;
+    max-width: 1600px;
+    text-align: center;
+}
+
+.hero__title {
+    @include font (900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
+    color: $basic-white;
+    margin-bottom: 30px;
+}
+
+.hero__btn {
+    @extend %btn;
+    @include font (700, 16px, 1.88, 0.06em);
+    width: 216px;
+    height: 50px;
+
+    &:active {
+        background-color: #188ce8;
+    }
+}

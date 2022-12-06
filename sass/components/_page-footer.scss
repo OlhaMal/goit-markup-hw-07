@@ -1,0 +1,108 @@
+.footer {
+    min-height: 252px;
+    padding-top: 60px;
+    background-color: $primary-background;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address {
+    margin-right: 70px;
+}
+
+.logo {
+    @extend %logo;
+
+    &--white {
+        color: $basic-white;
+    }
+}
+
+.footer-contacts {
+    margin-top: 20px;
+}
+
+.footer-contacts__item {
+    margin-bottom: 9px;
+}
+
+.footer-contacts__link {
+    font-style: normal;
+    @include font (normal, 14px, 1.71, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+    @include transition (color);
+
+    &:hover,
+    &:focus {
+        color: $brand-color;
+    }
+
+    &--white {
+        color: $basic-white;
+    }
+}
+
+.media__title {
+    @extend %subtitle;
+}
+
+.media__list {
+    display: flex;
+    gap: 10px;
+}
+
+.media__link {
+    @include centeredFlex (flex, center, center);
+    width: 44px;
+    height: 44px;
+    color: $basic-white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    @include transition (background-color);
+
+    &:hover,
+    &:focus {
+        background-color: $brand-color;
+    }
+}
+
+.subscription {
+    margin-left: auto;
+}
+
+.subscription__text {
+    @extend %subtitle;
+}
+
+.subscription__form {
+    display: flex;
+    gap: 12px;   
+}
+
+.subscription__input {
+    background-color: var(--primary-background) ;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    @include font (normal, 16px, calc(20/16), 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription__btn {
+    @extend %btn;
+    @include centeredFlex (flex, center, center);
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    @include font (700, 16px, calc(30/16), 0.06em);
+
+    &:active {
+        background-color: #188CE8;
+    }
+}

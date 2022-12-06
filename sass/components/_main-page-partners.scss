@@ -1,0 +1,27 @@
+.partners {
+    min-height: 372px;
+}
+
+.partners__title {
+    @extend %title;
+}
+
+.partners__list {
+    @include centeredFlex (flex, space-between, none);
+}
+
+.partners__link {
+    color: $faint-gray-color;
+    @include centeredFlex (flex, center, center);
+    width: 170px;
+    height: 92px;
+    border: 1px solid $faint-gray-color;
+    border-radius: 4px;
+    @include transition (color border);
+
+    &:hover,
+    &:focus {
+        color: $brand-color;
+        border: 1px solid $brand-color;
+    }
+}
