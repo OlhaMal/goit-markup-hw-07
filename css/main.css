@@ -335,8 +335,8 @@ body {
 .hero {
   margin: 0 auto;
   min-height: 600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../img/main_bg.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/main_bg.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/main_bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main_bg.jpg);
   background-repeat: no-repeat;
   background-color: #2f303a;
   padding-top: 200px;
@@ -600,7 +600,7 @@ body {
           transform: translateX(-100%);
   width: 16px;
   height: 15px;
-  background-image: url(../../img/checkbox.svg);
+  background-image: url(../img/checkbox.svg);
 }
 
 .privacy__input:checked + .privacy__checkbox,
@@ -609,13 +609,13 @@ body {
   border-radius: 2px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../../img/check-mark.svg);
+  background-image: url(../img/check-mark.svg);
   border: 1px solid #2196f3;
 }
 
 .privacy__input:focus + .privacy__checkbox {
   border-radius: 2px;
-  background-image: url(../../img/check-mark.svg);
+  background-image: url(../img/check-mark.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #212121;
